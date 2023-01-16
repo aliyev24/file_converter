@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 >Convert your file into JPG/PNG file!</h1>
+
+
+
+<form method="post"  action= "{% url 'home' %}" enctype="multipart/form-data" >
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <button type="submit" >Upload</button>
+</form>
+
+</body>
+</html>
