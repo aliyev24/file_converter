@@ -1,9 +1,10 @@
 # file_converter
 Convert files into JPG/PNG files and download them.
+30 minutes after convertion, files get automatically deleted.
 
 - Files
 - Convertion into PNG/JPG
-- Download
+- Download file
 
 # Requirements
 
@@ -31,7 +32,7 @@ python -m pip install -r requirements.txt
 
 # Build with
 * Django 4
-* Docker 4.14
+* Docker 4
 * Postgres 14
-* Redis 3.5
 * Celery 5
+* Redis 3
