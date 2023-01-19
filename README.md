@@ -29,6 +29,38 @@ python -m venv venv
 ```
 python -m pip install -r requirements.txt
 ```
+4. Create Postgres database.
+
+
+5. Go to [Djescrety](https://djecrety.ir/) generate secret key and copy it.
+
+
+6. Create '.env' file in settings root and paste this:
+
+ ```
+   root=true
+ 
+   SECRET_KEY=password from Djescrety
+
+   DATABASE_NAME=your_db_name_created
+
+   DATABASE_USER=your_db_user
+
+   DATABASE_PASSWORD=your_password
+
+   DATABASE_HOST=localhost
+
+   DATABASE_PORT=5432
+   ```
+ 7. Run
+ 
+ ```
+ docker-compose up --build
+ ```
+ 8. Run
+ ```
+ docker-compose up
+ ```
 
 # Build with
 * Django 4
