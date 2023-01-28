@@ -6,7 +6,7 @@ idea
 __pycache__
 db.sqlite3
 /venv
-.env
+shop/.env
 **/migrations/**
 !**/migrations
 !**/migrations/__init__.py
