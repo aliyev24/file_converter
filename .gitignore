@@ -13,6 +13,7 @@ shop/.env
 
 !*media/.gitkeep
 
-media/temp.*
+media/*
+!**/media/temp/.gitkeep
 
 celerybeat-schedule.*
