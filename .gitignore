@@ -12,6 +12,7 @@ shop/.env
 !**/migrations/__init__.py
 
 !*media/.gitkeep
-media/*
+
+!**/media/temp
 
 celerybeat-schedule.*
