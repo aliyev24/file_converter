@@ -41,3 +41,6 @@ def make_png(request, file_id):
     png.save(path)
     png_converted = models.FileUser.objects.create(documentUser=path)
     return render(request, 'kilo/png.html', {'png_converted': png_converted})
+
+
+print('Hello')
