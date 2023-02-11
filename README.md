@@ -33,7 +33,7 @@ POSTGRES_HOST=db
 POSTGRES_PORT=5432
    ```
 
-2. Create a docker image and run
+2. Create a docker image and run:
 
 ```
 docker-compose up --build
