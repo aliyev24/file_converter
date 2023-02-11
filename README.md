@@ -6,65 +6,35 @@ Convert files into JPG/PNG files and download them.
 - Convertion into PNG/JPG
 - Download file
 
+# Build with
+* Django 4
+* Docker
+* Postgres
+* Celery
+* Redis
+
 # Requirements
 
 * Python 3.9 and up
 * Docker 4.14
 
-# Installation 
+# Installation
 
-1. Create virtual environment:
-
-```
-python -m venv venv
-```
-
-2. Activate virtual environment
-```
-.\venv\Scripts\activate
-```
-
-3. Install requirements
-
-```
-python -m pip install -r requirements.txt
-```
-4. Create Postgres database.
-
-
-5. Go to [Djescrety](https://djecrety.ir/) generate secret key and copy it.
-
-
-6. Create '.env' file in settings root and paste this:
+1. Create '.env' file in settings.py root and paste this:
 
  ```
-   root=true
- 
-   SECRET_KEY=password from Djescrety
+DEBUG=0
+SECRET_KEY=l8g!36r#0t_x*aflo*u^78oh+)*5w-v_@=s65k1li5qr_!*518
 
-   DATABASE_NAME=your_db_name_created
-
-   DATABASE_USER=your_db_user
-
-   DATABASE_PASSWORD=your_password
-
-   DATABASE_HOST=localhost
-
-   DATABASE_PORT=5432
+POSTGRES_NAME=your_postgres_name
+POSTGRES_USER=your_postgres_username
+POSTGRES_PASSWORD=your_postgres_password
+POSTGRES_HOST=db
+POSTGRES_PORT=5432
    ```
- 7. Run
- 
- ```
- docker-compose up --build
- ```
- 8. Run
- ```
- docker-compose up
- ```
 
-# Build with
-* Django 4
-* Docker 4
-* Postgres 14
-* Celery 5
-* Redis 3
+2. Create a docker image and run
+
+```
+docker-compose up --build
+```
