@@ -6,19 +6,18 @@ Convert files into JPG/PNG files and download them.
 - Convertion into PNG/JPG
 - Download file
 
-# Build with
+_ _ _ _ _ _ _ _ _ _ _
+
+### Build with
 * Django 4
 * Docker
 * Postgres
 * Celery
 * Redis
 
-# Requirements
+_ _ _ _ _ _ _ _ _ _ _
 
-* Python 3.9 and up
-* Docker 4.14
-
-# Installation
+### Installation
 
 1. Create '.env' file in settings.py root and paste this:
 
