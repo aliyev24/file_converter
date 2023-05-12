@@ -28,6 +28,7 @@ _ _ _ _ _ _ _ _ _ _ _
 * Postgres
 * Celery
 * Redis
+* HTML
 
 _ _ _ _ _ _ _ _ _ _ _
 
